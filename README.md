@@ -1,5 +1,7 @@
 # Docker with MSSQL Server 2019
 
+*Note: This guide will allow you to containerize sqlserver; however, you must go into docker's settings and assure proper # cores and memory is allocated as large queries will take a very long time otherwise*
+
 1. Create a .env file on the root of the project at the same level as the docker-compose.yml and define the following:
     ```
     SA_PASSWORD=<YOUR-DB-PASSWORD>
