@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  db:
+    container_name: sql_server_2019
+    build:
+      context: ./Docker/
+      args:
+        - USERNAME=$USERNAME
+        - PASSWORD=$PASSWORD
+        - SA_PASSWORD=$SA_PASSWORD
+    environment:
+      - SA_PASSWORD=${SA_PASSWORD}
+      - ACCEPT_EULA=${ACCEPT_EULA}
+    ports:
+      - '1433:1433'
+    volumes:
+      - ./data:/var/opt/mssql/data
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "500k"
+        max-file: "5"  
