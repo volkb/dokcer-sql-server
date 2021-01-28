@@ -1,4 +1,4 @@
-# DockerMSSQLServer
+# Docker with MSSQL Server 2019
 
 1. Create a .env file on the root of the project at the same level as the docker-compose.yml and define the following:
     ```
