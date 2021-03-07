@@ -2,7 +2,9 @@
 
 *Note: This guide will allow you to containerize sqlserver; however, you must go into docker's settings and assure proper # cores and memory is allocated as large queries will take a very long time otherwise*
 
-1. Create a .env file on the root of the project at the same level as the docker-compose.yml and define the following:
+0. Insure that docker is installed on your system. If you are a Windows user, and using Docker desktop, recent versions enforce the use of a WSL based engine. To set that up follow the MS guide [here](https://docs.docker.com/docker-for-windows/wsl/). If you are a Windows home user, make sure to use the WSL 2 instructions.  
+
+1. Create a .env file on the root of the project at the same level as the docker-compose.yml and define the following, ensure that the passwords you set follow the SQLServer password requirements found [here](https://docs.microsoft.com/en-us/sql/relational-databases/security/password-policy?view=sql-server-ver15):
     ```
     SA_PASSWORD=<YOUR-DB-PASSWORD>
     ACCEPT_EULA=Y
