@@ -18,7 +18,7 @@
 
 4. Open a terminal (for windows use Powershell), and cd into the directory of the docker-compose file
 
-5. Run `docker-compose up` and wait for the terminal to read "Finished setup script"
+5. Run `docker-compose up --build` and wait for the terminal to read "Finished setup script"
 
 6. open Sql Server mgmt studio and login, your options should read as follows:
 	```
