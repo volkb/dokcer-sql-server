@@ -14,7 +14,7 @@
 2. Create your script for restoring the database. Use the following command to assist you in getting the names of the .mdf and .ldf in your backup.
     ```RESTORE FILELISTONLY FROM DISK='<PATH-To-YOUR-BACKUP-FILE>' WITH FILE=1```
 
-3. create a folder in the /Docker directory called 'databases'	
+3. create a folder in the /Docker directory called 'databases' any current .mdf files you have can be added in here and will be moved into the Docker container on build	
 
 4. Open a terminal (for windows use Powershell), and cd into the directory of the docker-compose file
 
